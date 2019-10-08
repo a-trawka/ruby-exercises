@@ -3,12 +3,12 @@
 # The method must return a boolean and be case insensitive. The string can contain any char.
 
 
-def XO(str)
+def xo(str)
   upcased = str.chars.map { |letter| letter.upcase }
   upcased.count('X') == upcased.count('O')
 end
 
 
-p XO('xXoOoo')
-p XO('xxOO')
-p XO('XXooO')
+p xo('xXoOoo')
+p xo('xxOO')
+p xo('XXooO')
